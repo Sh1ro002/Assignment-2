@@ -1,0 +1,50 @@
+        <%- include('partials/header') %>
+        <div id="wrapper">
+            <header>
+                <h1>WELCOME TO ABOUT ME :D</h1>
+                <p> This is page is all about yours truly</p>
+                <nav>
+                    <!--panel of links to redirect ppl to places on the website-->
+                    <a href="/">Home Page</a>  
+                    <a href="/feedback">Contact Me</a>  
+                    <a href="/projects">Projects</a>
+                </nav>
+            </header>
+            <article>
+                <!--side bar pop up. has a fun fact just for fun-->
+                <aside>
+                    <p> Fun Fact: I have two cats. Not relevant but a cool fact to know :D </p>
+                </aside>
+                <!--actual personal info within sections divided into diff paragraphs-->
+                <section>
+                    <h3>Who am I?</h3>
+                    <p>Im Georgy Sim. I am currently 21 years old and I was born in Russia.</p>
+                </section>
+                <section>
+                    <h3>What do I do?</h3>
+                    <p>I am currently a cybersecurity student and this webpage is my first assignment!</p>
+                </section>
+
+                <!--video in the right column section defines properties for the video that plays with two diff sources
+                to ensure that it works everywhere-->
+                <div id="right-column">
+                    <video
+                        id="video" 
+                        width="100"
+                        height="200"
+                        controls 
+                        autoplay muted loop
+                        poster="/asset/images/selfie.jpg"
+                        preload="auto">
+                            <source src="/asset/videos/self-introduction.mp4" type="video/mp4">
+                            <source src="/asset/videos/self-introduction.ogv" type="video/ogv">
+                    </video> 
+                </div>
+                <!--media insert, specifically a photo of myself-->
+                <figure>
+                    <img src="/asset/images/selfie.jpg" width="210" height="240" alt="My Photo!">
+                    <figcaption>Here is a photo of me :D</figcaption>
+                </figure>
+            </article>
+            <!--same thing as the top its been simplified-->
+            <%- include('partials/footer') %>

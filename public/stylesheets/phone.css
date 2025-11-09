@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* Color Scheme : #6C2AF5, #AC93F4, #F46EE5, #F59F84, #F46175*/
+/* The body tag style applies to all elements on the page */
+body {
+    /*background-color: rgb(0, 0, 0);*/
+    background: yellow; 
+    background: -moz-linear-gradient(left, red 0%, yellow 100%); 
+    background: -webkit-linear-gradient(left, red 0%, yellow 100%); 
+    background: -o-linear-gradient(left, red 0%, yellow 100%); 
+    background: linear-gradient(to right, red 0%,yellow 100%);
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding: 8px;
+    margin: 0px;
+    font-size: 1em;
+}
+header, footer
+{
+   background-color: slategray;
+   color: white; 
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+address
+{
+    margin-left: 15px;
+}
+aside
+{
+    background-color: antiquewhite;
+    float: right;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+}
+/* The wrapper ID style is used with a div tag to provide a 960px wide page */
+#wrapper {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: blue;*/
+    background-color: LightSlateGrey;
+}
+
+/* The right-column ID style is floated right */
+/*set to auto to be responsive and to accomodate for screen size*/
+#right-column {
+    float: right;
+    width: auto;
+    height: auto;
+}
+mark
+{
+    background-color: green;
+}
+/*set to auto to be responsive and to accomodate for screen size*/
+/*em for fonts included to make sur ethe fonts dont looks massive on any screen 
+and to scale so it looks presentable*/
+figure
+{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+/*set to auto to be responsive and to accomodate for screen size*/
+/*em for fonts included to make sur ethe fonts dont looks massive on any screen 
+and to scale so it looks presentable*/
+figcaption
+{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: auto;
+    font-size: 1em;
+
+}
+article
+{
+    height: auto;
+}
+/* The left-column ID style is floated left */
+/*set to auto to be responsive and to accomodate for screen size*/
+#left-column {
+    float: left;
+    width: auto;
+    background-color: silver;
+    height: auto;
+}
+/* Defining a style for a set of tags separated by commas applies the style to all tags */
+/*em for fonts included to make sure the fonts dont looks massive on any screen 
+and to scale so it looks presentable*/
+h1,h2,h3,h4,h5,h6,p,li {
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+/*em for fonts included to make sure the fonts dont looks massive on any screen 
+and to scale so it looks presentable*/
+#footer {
+    height: 40px;
+    font-size: 1em;
+}
+
+#banner {
+    height: 120px;
+    background-color: SlateGrey;
+}
+
+/* Defining a style for a set of tags not separated by commas applies the style only to all tags within the preceding tag*/
+#banner h1 {
+    color: white;
+}
+
+/* Advanced Web design relies on class or ID styles, never tables */
+.box {
+    height: 100px;
+    width: 100px;
+    float: left;
+    background-color: rgb(73, 214, 54);
+    margin: 15px;
+    padding: 25px;
+    opacity: .5;
+    border-radius: 75px;
+}
+
+/* The following pseudo-class applies to the box class when in a hovered state */
+.box:hover {
+    opacity: 1;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e4f5fc+0,bfe8f9+50,9fd8ef+60,2ab0ed+100 */
+background: radial-gradient(ellipse at center,  rgba(228,245,252,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 60%,rgba(42,176,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+/* This clear class style terminates float */
+.clear {
+    clear: both;
+}
+
+/*set to auto to be responsive and to accomodate for screen size*/
+/*em for fonts included to make sure the fonts dont looks massive on any screen 
+and to scale so it looks presentable*/
+video
+{ 
+    width: auto; 
+    padding: 0px; 
+    margin: 15px auto; 
+    background-color:black; 
+    border:2px white solid; 
+    box-shadow: 10px 10px 5px black;
+}
+button 
+{
+background-color:black;
+margin: 15px; 
+color:white;
+height:10%;
+width:20%; 
+border:2px white solid;
+/* offset-x: positive:right, negative:left */
+/* offset-y: positive:down, negative:up */
+/* blur-radius: */
+/* color */
+box-shadow: 10px 10px 5px black;
+/* to make rounded corners*/
+/* if its one value mena all four sides */
+/* top-left, top-right, bottom-right, bottom-left */
+border-radius: 5px;
+}
+
+button:hover 
+{ 
+    background-color:beige; 
+    color:black; 
+    height:10%; 
+    border:2px white solid; 
+    border-radius: 5px; 
+}
+/*Pressing effect. When pressed, creates a shadow under the button and moves
+the button down by a few pixels to give it the illusion of being pressed down*/
+button:active 
+{ 
+    box-shadow: 5px 5px 5px black; 
+    transform: translateY(4px); 
+}

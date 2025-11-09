@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+<div id="wrapper">
+<!--The banner ID style is inside the wrapper ID style-->
+    <div id="banner">
+        <h1>Welcome To My Personal Portfolio Website!</h1>
+        <p>Made by Georgy Sim :D</p>
+    </div>
+    <!--left-column ID style is floated left and used for navigation-->
+    <h3>Where do you want to go? :3</h3>
+    <!--ul mean unordered list-->
+    <!--ol mean ordered list-->
+    <br>
+    <button onclick="document.location='/'">Home</button>
+    <button onclick="document.location='/aboutme'">All About Me!</button>
+    <br>
+    <button onclick="document.location='/projects'">My Projects</button>
+    <button onclick="document.location='/feedback'">Contact Me!</button>
+
+</div>
+<!--right-column ID style is floated right and used for content-->
+<!--The clear class style clears (removes) float-->
+<div class="clear"></div>
+<!--same as top-->
+<%- include('partials/footer') %>
